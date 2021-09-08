@@ -7,8 +7,6 @@ import argparse
 import os
 
 
-app = FaceAnalysis()
-app.prepare(ctx_id=0, det_size=(640, 640))
 
 SRC = np.array(
     [
@@ -40,6 +38,8 @@ if __name__ == "__main__":
     parser.add_argument("-L", help="source relative paths", default="/dev/stdin")
     parser.add_argument("-T", help="target directory", default="")
     args = parser.parse_args()
+    app = FaceAnalysis()
+    app.prepare(ctx_id=0, det_size=(640, 640))
     with open(args.L) as f:
         for path in f:
             path = path.strip()
