@@ -112,3 +112,4 @@ cfg/
 notebooks/
 testing-report.html
 *.el
+data/
