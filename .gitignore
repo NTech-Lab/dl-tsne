@@ -114,3 +114,4 @@ testing-report.html
 *.el
 data/
 lists/
+notebooks/embeddings.h5
